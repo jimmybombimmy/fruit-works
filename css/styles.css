@@ -1,0 +1,381 @@
+/* TO DO LIST
+    1) MAKE THE NAV BUTTON APPEAR WHEN IT'S IN TABLET OR PHONE MODE
+    2) MAKE DROP DOWN TEXT ON THE LEFT FURTHER UP WHEN PRESSING THE NAV BUTTON
+    3) Make THINGS FADE IN ON SCROLL AND NOT DISAPPEAR WHEN YOU SCROLL UP
+        a) DO THIS WITH PLANTING. THEN PRUNING. THEN PROPAGATING.
+        b) SO IT'S CHEESY AS FUCK
+    4) USE CLAMP TO MAKE IT RESPONSIVE
+*/
+
+/* Navbar */
+
+.navbar {
+    padding: 10px 100px 0;
+    /* backdrop-filter: blur(4px); */
+    margin-left: 0;
+
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #49991d;
+}
+
+@media (min-width:992px) {
+    .d-inline-flex {
+        position: absolute;
+        right: 100px;
+        display: inline-block;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.blurFade {
+    height: 5px;
+}
+
+
+
+
+
+/* .navbar-blur-fade {
+    content: '';
+    height: 80px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    backdrop-filter: blur(4px);
+    mask-image: linear-gradient(black 60%, transparent)
+} */
+
+/*.navbar-blur-fade3.5 {
+    padding: 1px;
+    -webkit-backdrop-filter: blur(3.5px);
+    backdrop-filter: blur(3.5px);
+}
+
+.navbar-blur-fade3 {
+    padding: 1px;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.navbar-blur-fade2.5 {
+    padding: 1px;
+    -webkit-backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2.5px);
+}
+
+.navbar-blur-fade2 {
+    padding: 1px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+.navbar-blur-fade1.5 {
+    padding: 1px;
+    -webkit-backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(1.5px);
+}
+
+.navbar-blur-fade1 {
+    padding: 1px;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+}
+
+.navbar-blur-fade0.5 {
+    padding: 1px;
+    -webkit-backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(0.5px);
+} */
+
+.fw-logo-navbar {
+    height: 150px;
+    width: auto;
+}
+
+.fw-logo-navbar:hover {
+    height: 150px;
+    width: auto;
+    color: #4A696D;
+}
+
+.index.title.image {
+    position: left;
+}
+
+#title {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.squarespace-cdn.com/content/v1/628239b1bbfeb1359b0f2f9d/cceb2088-a1d1-4f9b-8565-881067f181bd/pexels-kaboompics-com-6035+%281%29.jpg");
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+
+
+@media (max-width: 800px) {
+    .top-page {
+        text-align: center;
+        /* color: blue; */
+    }
+
+    .text-anim {
+        animation-name: moveInTop;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        position: inline-block;
+
+    }
+
+    @keyframes moveInTop {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        80% {
+            opacity: 0.9;
+            transform: translateY(-3px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .text-anim {
+        animation-name: moveInLeft;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        position: inline-block;
+    }
+}
+
+
+
+/* Top page */
+
+.top-page {
+    height: 400px;
+    width: 100%;
+    padding: 100px 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 50px auto 40px;
+    letter-spacing: 2px;
+
+
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .text-anim {
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    position: inline-block;
+} */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    80% {
+        opacity: 0.9;
+        transform: translateX(3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    80% {
+        opacity: 0.9;
+        transform: translateY(3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+span {
+    display: inline-block;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+span.fade {
+    opacity: 1;
+}
+
+
+/* Intro */
+
+.intro {
+    background-color: white;
+}
+
+#about-us {
+    background-color: #eef3f3;
+    height: 600px;
+    text-align: center;
+}
+
+.mission-statement {
+    color: #4A696D;
+    padding-bottom: 50px;
+
+}
+
+.mission-statement-box {
+    width: 65%;
+    height: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 30%;
+    margin: auto;
+}
+
+.button-container {
+    height: 200px;
+    width: auto;
+    display: inline-block;
+}
+
+.myButton {
+    padding: 20px 30px;
+    background-color: #4A696D;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: flex;
+    
+}
+
+.myButton:hover {
+    /* background-color: #669096; */
+    color: white;
+    animation-duration: 3.5s;
+    animation-name: buttonmove;
+    /* animation-timing-function: ease; */
+    animation-duration: 20s;
+    /* transform-origin: bottom; */
+
+}
+
+.myButton:active {
+    background-color:  #33494c;
+    color: #eef3f3;
+}
+
+
+
+@keyframes buttonmove {
+    0% {
+        transform: translateY(0px) translateX(0px);
+        box-shadow: 0 rgba(0,0,0,.0);
+    }
+
+    1% {
+        transform: translateY(-5px) translateX(-5px);
+        box-shadow: 3px 3px 6px 2px rgba(0,0,0,.45);
+    }
+
+    100% {
+        transform: translateY(-5px) translateX(-5px);
+        box-shadow: 3px 3px 6px 2px rgba(0,0,0,.45);
+    }
+}
+
+/* Services */
+
+#services {
+    height: 100px;
+    text-align: center;
+}
+
+.services-header {
+    color: #519d2a;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.services-desc {
+    width: 70%;
+    position: auto;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.services-box {
+    display: inline-block;
+    position: auto;
+}
+
+
+.hidden {
+    opacity: 0.1;
+    filter: blur(3px);
+    transform: translateY(-7%);   
+    transition-delay: 0.5s; 
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .hidden {
+    transition: all 2s;
+    }
+}

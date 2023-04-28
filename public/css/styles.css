@@ -1,0 +1,321 @@
+h1 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+}
+
+
+/* ------------- Nav Bar ------------- */
+
+#navvety {
+    width: 100%;
+    height: 115px;
+    padding: 0;
+    padding: 0;
+}
+
+#navbarTop {
+    position: absolute;
+    height: 115px;
+    width: 100%;
+    z-index: -1;
+}
+
+#navTextBox {
+    display: inline-block;
+    /* border: 1px solid;
+    border-color: blue; */
+    height: 100%;
+
+}
+
+#fwLogo {
+    /* color: red; */
+    position: absolute;
+    display: inline;
+    height: 100%;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 800px;
+    /* object-position: -50% 50%; */
+    /* border: 1px solid;
+    border-color: pink; */
+    padding-bottom: 5px
+
+}
+
+
+#navText {
+    /* border: 1px solid;
+    border-color: red; */
+    width: 100%;
+    height: 130px;
+    margin: 0;
+    display: inline;
+    /* flex-wrap: wrap; */
+    /* width: 500px; */
+    /* text-align: right; */
+
+    padding-top: 6px;
+}
+
+
+.contactNav {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    /* border: 1px solid; */
+    height: 48px;
+    padding-right: 10px
+    
+    /* border-color: black; */
+}
+
+@media (min-width: 960px) {
+
+    .contactText {
+        position: relative;
+        top: 25px;
+    }
+
+    .navLinks {
+        position:relative;
+        top: 30px;
+    }
+
+    .topFacebook {
+        position: relative;
+        bottom: 18px;
+        display: none;
+    }
+
+    .topInstagram {
+        position: absolute;
+        top: 40px;
+        display: none;
+    }
+
+    .topTwitter {
+        position: absolute;
+        top: 75px;
+        display: none;
+    }
+
+}
+
+@media (max-width: 959px){
+    .contactNav {
+        margin-top: 3px;
+    }
+
+    .navLinksAll {
+        margin-top: 17px;
+    }
+
+    .topFacebook {
+        position: relative;
+        bottom: 18px;
+        display: flex;
+    }
+
+    .topInstagram {
+        position: absolute;
+        top: 40px
+    }
+
+    .topTwitter {
+        position: absolute;
+        top: 75px;
+    }
+
+    /* #realNavbar {
+        height:50px;
+    } */
+
+
+
+
+}
+
+
+
+
+#navEmail {
+    font-size: 1.05rem;
+    padding-top: auto;
+    /* display: inline; */
+
+    
+}
+
+#navTele {
+    font-size: 1rem;
+    /* display: inline; */
+}
+
+.contactText {
+    padding-top: 11px;
+    margin: 0;
+}
+
+
+
+.navIcons {
+    height: 48px;
+    width: auto;
+}
+
+
+.navLinks {
+    /* border: 1px solid; */
+    /* border-color: brown; */
+    height: 28px;
+    width: auto;
+    padding: 0;
+    /* margin: 2px; */
+    display: absolute;
+
+}
+
+
+
+
+/* -------------- Real Navbar -------------- */
+
+
+#realNavbar {
+    /* height: 35px; */
+    width: auto;
+    background-color: #4a696d;
+    /* text-align: center; */
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.navbar-nav {
+    margin: 2px;
+}
+
+.nav-item {
+    display: inline-flex;
+    padding: 0 10px;
+}
+
+.nav-item:hover {
+    background-color: #eef3f3;
+    color: black;
+    height: 100%px;
+    transition: 0.3s;
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    border-color: white;
+    padding: 4px 12px;
+    margin-bottom: 2px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 600;
+    padding: 5px 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.navBreak {
+    text-align: center;
+    color:white;
+    padding-top: 5px;
+}
+
+.dropdown-item {
+    background-color: white;
+    color: black;
+    border: 2px 
+    
+}
+
+.dropdown-menu {
+    background-color: #111819;
+}
+
+
+@media (max-width: 959px){
+    .nav-link {
+        font-size: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#navLRGrow {
+    height: 50px;
+    width: 150px;
+    display:inline-flex;
+    background-color: red;
+}
+
+#mobileNavbar {
+    height: 50px;
+    background-color: #4a696d;
+    width: 70px;
+    border-radius: 0 10px 10px 0;
+    position: fixed;
+    display: inline-flex;
+}
+
+#navbarNav2 {
+    background-color: #4a696d;
+    width: 200x;
+    bottom: 2px;
+    border-radius: 0 0px 15px 0;
+    position: relative;
+    /* bottom: 52px; */
+    margin-right: 220px
+}
+
+.dropdownNav2 {
+    width: 150px;
+    padding-left: 0px;
+    /* padding-top: 50px; */
+}
+
+.navbar-toggler {
+    padding-top: 0 12 0;
+    color: rgb(160,160,160,0.5);
+    border: 3px solid;
+    border-color: white;
+    margin: 0;
+    position: relative;
+    bottom: 4px;
+}
+
+@media (min-width: 661px) {
+    #mobileNavbar {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    #realNavbar {
+        display: none;
+    }
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    border: 0;
+}
